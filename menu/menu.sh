@@ -113,8 +113,8 @@ echo -e   ""
 read -p " Select menu : " opt
 case $opt in
 1|01) clear ; menu-ssh ;;
-2|02) clear ; xmenu ;;
-3|03) clear ; tmenu ;;
+2|02) clear ; menu-vmess ;;
+3|03) clear ; menu-trojan ;;
 4|04) clear ; menu-backup ;;
 5|05) clear ; menu-set ;;
 6|06) clear ; running ;;
