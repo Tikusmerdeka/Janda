@@ -65,10 +65,10 @@ else
 status_xray="${red}OFF${NC}"
 fi
 function lane_atas() {
-echo -e " ${z}╭────────────────────────────────────────────────────╮${NC}"
+echo -e " ${blue}╭────────────────────────────────────────────────────╮${NC}"
 }
 function lane_bawah() {
-echo -e " ${z}╰────────────────────────────────────────────────────╯${NC}"
+echo -e " ${blue}╰────────────────────────────────────────────────────╯${NC}"
 }
 ungu='\033[0;35m'
 w='\033[1;96m'
@@ -78,13 +78,13 @@ echo -e " ${blue}│ \e[1;92;41m                MAZFARUK TUNNELING              
 lane_bawah
 lane_atas
 echo -e " ${blue}│${NC} OS            ${NC}:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
-echo -e " ${blue}│${NC} IP            ${NC}:  $MYIP"
-echo -e " ${blue}│${NC} TOTAL RAM     ${NC}:  $ramvps MB"
+echo -e " ${green}│${NC} IP            ${NC}:  $MYIP"
+echo -e " ${green}│${NC} TOTAL RAM     ${NC}:  $ramvps MB"
 #echo -e " ${blue}│${NC} SWAP RAM      ${NC}:  $MEMOFREE MB"
-echo -e " ${blue}│${NC} ISP           ${NC}:  $(cat /root/.isp)" 
-echo -e " ${blue}│${NC} CITY          ${NC}:  $(cat /root/.city)"
-echo -e " ${blue}│${NC} DOMAIN        ${NC}:  $(cat /etc/xray/domain)"
-echo -e " ${blue}│${NC} UPTIME        ${NC}:  $uptime"
+echo -e " ${green}│${NC} ISP           ${NC}:  $(cat /root/.isp)" 
+echo -e " ${green}│${NC} CITY          ${NC}:  $(cat /root/.city)"
+echo -e " ${green}│${NC} DOMAIN        ${NC}:  $(cat /etc/xray/domain)"
+echo -e " ${green}│${NC} UPTIME        ${NC}:  $uptime"
 lane_bawah
 lane_atas
 echo -e " ${z}│${b} SSH-WS$NC : $status_ssh ${z}│$b NGINX$NC : $status_nginx ${z}│$b XRAY$NC : $status_xray ${z}│$b   DONE   ${z}│$NC" 
@@ -104,10 +104,10 @@ echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
 echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
 lane_atas
-echo -e " ${blue}│       ${ungu}[${w}01${ungu}]${NC} SSH WS       ${ungu}[${w}05${ungu}]${NC} FEATURES              ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}02${ungu}]${NC} XRAY         ${ungu}[${w}06${ungu}]${NC} STATUS SERVICE        ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}03${ungu}]${NC} TROJAN       ${ungu}[${w}07${ungu}]${NC} UPDATE SCRIPT         ${blue}│${NC}"
-echo -e " ${blue}│       ${ungu}[${w}04${ungu}]${NC} MENU BACKUP  ${ungu}[${w}08${ungu}]${NC} LOG CREATE            ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}01${blue}]${NC} SSH/OPENVPN          ${ungu}[${w}05${blue}]${NC} FEATURES           ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}02${blue}]${NC} VMESS/XRAY           ${ungu}[${w}06${blue}]${NC} STATUS SERVICE     ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}03${blue}]${NC} TROJAN GOO           ${ungu}[${w}07${blue}]${NC} UPDATE SCRIPT      ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}04${blue}]${NC} MENU BACKUP          ${ungu}[${w}08${blue}]${NC} LOG CREATE         ${blue}│${NC}"
 lane_bawah
 echo -e   ""
 read -p " Select menu : " opt
