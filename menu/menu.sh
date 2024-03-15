@@ -118,7 +118,7 @@ case $opt in
 4|04) clear ; menu-backup ;;
 5|05) clear ; menu-set ;;
 6|06) clear ; running ;;
-7|07) clear ; wget -q https://raw.githubusercontent.com/Tikusmerdeka/Janda/update.sh && chmod +x update.sh && ./update.sh ;;
+7|07) clear ; wget https://raw.githubusercontent.com/Tikusmerdeka/Janda/main/update.sh && chmod +x update.sh && sed -i -e 's/\r$//' update.sh && screen -S update ./update.sh ;;
 8|08) clear ; cat /etc/log-create-user.log ; read -p "Press [ Enter ] For Back To Menu" ;;
 *) menu ;;
 esac
