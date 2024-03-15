@@ -53,7 +53,7 @@ echo -e "     ${B}[${BIWhite}07${B}] Restart All Service"
 echo -e "     ${B}[${BIWhite}08${B}] Change Banner"
 echo -e "     ${B}[${BIWhite}09${B}] Cek Bandwith"
 echo -e "     ${B}[${BIWhite}10${B}] Setting Auto Reboot"
-
+echo -e "     ${B}[${BIWhite}11${B}] INSTALL BOT"
 echo -e " ${B}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${B}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
 echo ""
@@ -70,6 +70,7 @@ case $opt in
 8) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
 9) clear ; bw ; exit ;;
 10) clear ; jam ; exit ;;
+10) clear ; xolpanel ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
