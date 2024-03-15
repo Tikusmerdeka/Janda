@@ -74,6 +74,7 @@ echo -e " ${blue}╰────────────────────
 ungu='\033[0;35m'
 w='\033[1;96m'
 clear
+clear
 lane_atas
 echo -e " ${blue}│ \e[1;92;41m                MAZFARUK TUNNELING                ${NC}${blue} │${NC}"
 lane_bawah
