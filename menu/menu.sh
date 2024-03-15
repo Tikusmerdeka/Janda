@@ -78,18 +78,18 @@ echo -e " ${blue}│ \e[1;92;41m                MAZFARUK TUNNELING              
 lane_bawah
 lane_atas
 echo -e " ${blue}│${NC} OS            ${NC}:  "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`
-echo -e " ${green}│${NC} IP            ${NC}:  $MYIP"
-echo -e " ${green}│${NC} TOTAL RAM     ${NC}:  $ramvps MB"
+echo -e " ${blue}│${NC} IP            ${NC}:  $MYIP"
+echo -e " ${blue}│${NC} TOTAL RAM     ${NC}:  $ramvps MB"
 #echo -e " ${blue}│${NC} SWAP RAM      ${NC}:  $MEMOFREE MB"
-echo -e " ${green}│${NC} ISP           ${NC}:  $(cat /root/.isp)" 
-echo -e " ${green}│${NC} CITY          ${NC}:  $(cat /root/.city)"
-echo -e " ${green}│${NC} DOMAIN        ${NC}:  $(cat /etc/xray/domain)"
-echo -e " ${green}│${NC} UPTIME        ${NC}:  $uptime"
+echo -e " ${blue}│${NC} ISP           ${NC}:  $(cat /root/.isp)" 
+echo -e " ${blue}│${NC} CITY          ${NC}:  $(cat /root/.city)"
+echo -e " ${blue}│${NC} DOMAIN        ${NC}:  $(cat /etc/xray/domain)"
+echo -e " ${blue}│${NC} UPTIME        ${NC}:  $uptime"
 lane_bawah
 lane_atas
 echo -e " ${z}│${b} SSH-WS$NC : $status_ssh ${z}│$b NGINX$NC : $status_nginx ${z}│$b XRAY$NC : $status_xray ${z}│$b   DONE   ${z}│$NC" 
 lane_bawah
-echo -e "       ╭─────────────────────────────────────────╮" | lolcat
+echo -e "    ${blue}╭─────────────────────────────────────────╮${NC}"
 echo -e "                    ${g} TOTAL ACCOUNTS ${NC}"
 echo -e ""
 echo -e "${ksk}SSH/OVPN$NC    ${sama}$r $ssh1$NC $a"
@@ -97,17 +97,17 @@ echo -e "${ksk}VMESS$NC       ${sama}$r $vma$NC $a"
 echo -e "${ksk}VLESS$NC       ${sama}$r $vla$NC $a"
 echo -e "${ksk}TROJAN$NC      ${sama}$r $tra$NC $a"
 echo -e "${ksk}TROJAN GO$NC   ${sama}$r $trgo$NC $a"
-echo -e "       ╰─────────────────────────────────────────╯" | lolcat
+echo -e "    ${blue}╰─────────────────────────────────────────╯${NC}"
 echo -e "         ${blue}┌─────────────────────────────────────┐${NC}"
 echo -e "         ${blue}│$NC Version    : V1.2${NC}"
 echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
 echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
 lane_atas
-echo -e " ${blue}│  ${blue}[${w}01${blue}]${NC} SSH/OPENVPN          ${ungu}[${w}05${blue}]${NC} FEATURES           ${blue}│${NC}"
-echo -e " ${blue}│  ${blue}[${w}02${blue}]${NC} VMESS/XRAY           ${ungu}[${w}06${blue}]${NC} STATUS SERVICE     ${blue}│${NC}"
-echo -e " ${blue}│  ${blue}[${w}03${blue}]${NC} TROJAN GOO           ${ungu}[${w}07${blue}]${NC} UPDATE SCRIPT      ${blue}│${NC}"
-echo -e " ${blue}│  ${blue}[${w}04${blue}]${NC} MENU BACKUP          ${ungu}[${w}08${blue}]${NC} LOG CREATE         ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}01${blue}]${NC} SSH/OPENVPN          ${blue}[${w}05${blue}]${NC} FEATURES           ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}02${blue}]${NC} VMESS/XRAY           ${blue}[${w}06${blue}]${NC} STATUS SERVICE     ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}03${blue}]${NC} TROJAN GOO           ${blue}[${w}07${blue}]${NC} UPDATE SCRIPT      ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}04${blue}]${NC} MENU BACKUP          ${blue}[${w}08${blue}]${NC} LOG CREATE         ${blue}│${NC}"
 lane_bawah
 echo -e   ""
 read -p " Select menu : " opt
