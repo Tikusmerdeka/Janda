@@ -27,6 +27,7 @@ fi
 
 blue='\033[0;96m'
 y='\033[0;93m'
+ss = '\033[0;91m'
 NC='\033[0m'
 ksk="               ${z}"
 sama="${y}=$NC"
@@ -87,7 +88,7 @@ echo -e " ${blue}│${NC} DOMAIN        ${NC}:  $(cat /etc/xray/domain)"
 echo -e " ${blue}│${NC} UPTIME        ${NC}:  $uptime"
 lane_bawah
 lane_atas
-echo -e " ${z}│${b} SSH-WS$NC : $status_ssh ${z}│$b NGINX$NC : $status_nginx ${z}│$b XRAY$NC : $status_xray ${z}│$b   DONE   ${z}│$NC" 
+echo -e " ${blue}│${b} SSH-WS$NC : $status_ssh ${blue}│$b NGINX$NC : $status_nginx ${blue}│$b XRAY$NC : $status_xray ${blue}│$b   DONE   ${z}│$NC" 
 lane_bawah
 echo -e "    ${blue}╭─────────────────────────────────────────╮${NC}"
 echo -e "                    ${g} TOTAL ACCOUNTS ${NC}"
@@ -99,9 +100,9 @@ echo -e "${ksk}TROJAN$NC      ${sama}$r $tra$NC $a"
 echo -e "${ksk}TROJAN GO$NC   ${sama}$r $trgo$NC $a"
 echo -e "    ${blue}╰─────────────────────────────────────────╯${NC}"
 echo -e "         ${blue}┌─────────────────────────────────────┐${NC}"
-echo -e "         ${blue}│$NC Version    : V1.2${NC}"
-echo -e "         ${blue}│$NC Clent Name : $username ${NC}"
-echo -e "         ${blue}│$NC Exp Script : $valid ${w}($r $certifacate${NC} ) Days${NC}"
+echo -e "         ${blue}│$NC${y} Version    : ${NC}"V1.2
+echo -e "         ${blue}│$NC${y} Clent Name :${NC}"$username 
+echo -e "         ${blue}│$NC${y} Exp Script :${NC} $certifacate ) Days${NC}"
 echo -e "         ${blue}└─────────────────────────────────────┘${NC}"
 lane_atas
 echo -e " ${blue}│  ${blue}[${w}01${blue}]${NC} SSH/OPENVPN          ${blue}[${w}05${blue}]${NC} FEATURES           ${blue}│${NC}"
