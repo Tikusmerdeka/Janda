@@ -110,7 +110,7 @@ lane_atas
 echo -e " ${blue}│  ${blue}[${w}01${blue}]${NC} SSH/OPENVPN          ${blue}[${w}05${blue}]${NC} FEATURES           ${blue}│${NC}"
 echo -e " ${blue}│  ${blue}[${w}02${blue}]${NC} VMESS/XRAY           ${blue}[${w}06${blue}]${NC} STATUS SERVICE     ${blue}│${NC}"
 echo -e " ${blue}│  ${blue}[${w}03${blue}]${NC} TROJAN GOO           ${blue}[${w}07${blue}]${NC} UPDATE SCRIPT      ${blue}│${NC}"
-echo -e " ${blue}│  ${blue}[${w}04${blue}]${NC} MENU BACKUP          ${blue}[${w}08${blue}]${NC} LOG CREATE         ${blue}│${NC}"
+echo -e " ${blue}│  ${blue}[${w}04${blue}]${NC} VLESS MENU           ${blue}[${w}08${blue}]${NC} MENU BACKUP        ${blue}│${NC}"
 lane_bawah
 echo -e   ""
 read -p " Select menu : " opt
@@ -118,10 +118,10 @@ case $opt in
 1|01) clear ; menu-ssh ;;
 2|02) clear ; menu-vmess ;;
 3|03) clear ; menu-trojan ;;
-4|04) clear ; menu-backup ;;
+4|04) clear ; menu-vless ;;
 5|05) clear ; menu-set ;;
 6|06) clear ; running ;;
 7|07) clear ; wget https://raw.githubusercontent.com/Tikusmerdeka/Janda/main/update.sh && chmod +x update.sh && sed -i -e 's/\r$//' update.sh && screen -S update ./update.sh ;;
-8|08) clear ; cat /etc/log-create-user.log ; read -p "Press [ Enter ] For Back To Menu" ;;
+8|08) clear ; menu-backup ;;
 *) menu ;;
 esac
