@@ -1,5 +1,13 @@
 #!/bin/bash
-clear
+#
+# Auto install latest kernel for TCP BBR
+#
+# System Required:  CentOS 6+, Debian7+, Ubuntu12+
+#
+# Copyright (C) 2016-2018 Teddysun <i@teddysun.com>
+#
+# URL: https://teddysun.com/489.html
+#
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
