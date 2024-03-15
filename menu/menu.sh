@@ -90,15 +90,16 @@ lane_bawah
 lane_atas
 echo -e " ${blue}│${b} SSH-WS$NC : $status_ssh ${blue}│$b NGINX$NC : $status_nginx ${blue}│$b XRAY$NC : $status_xray ${blue}│$b   DONE   ${z}│$NC" 
 lane_bawah
-echo -e "    ${blue}╭─────────────────────────────────────────╮${NC}"
+echo -e "     ${blue}╭─────────────────────────────────────────╮${NC}"
 echo -e "                    ${g} TOTAL ACCOUNTS ${NC}"
-echo -e ""
+echo -e "         ${blue}───────────────────────────────────${NC}"
+echo -e
 echo -e "${ksk}SSH/OVPN$NC    ${sama}$r $ssh1$NC $a"
 echo -e "${ksk}VMESS$NC       ${sama}$r $vma$NC $a"
 echo -e "${ksk}VLESS$NC       ${sama}$r $vla$NC $a"
 echo -e "${ksk}TROJAN$NC      ${sama}$r $tra$NC $a"
 echo -e "${ksk}TROJAN GO$NC   ${sama}$r $trgo$NC $a"
-echo -e "    ${blue}╰─────────────────────────────────────────╯${NC}"
+echo -e "     ${blue}╰─────────────────────────────────────────╯${NC}"
 echo -e "         ${blue}┌─────────────────────────────────────┐${NC}"
 echo -e "         ${blue}│$NC${y} Version    : ${NC}"V1.2
 echo -e "         ${blue}│$NC${y} Clent Name :${NC}"$username 
